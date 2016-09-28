@@ -280,7 +280,7 @@ static NSUInteger gcd(NSUInteger a, NSUInteger b)
 
 - (void)startAnimating
 {
-    if (self.animatedImage) {
+    if (self.animatedImage && self.animationEnabled) {
         // Lazily create the display link.
         if (!self.displayLink) {
             // It is important to note the use of a weak proxy here to avoid a retain cycle. `-displayLinkWithTarget:selector:`

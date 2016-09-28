@@ -21,6 +21,8 @@
 //
 @interface FLAnimatedImageView : UIImageView
 
+@property (assign) BOOL animationEnabled;
+
 // Setting `[UIImageView.image]` to a non-`nil` value clears out existing `animatedImage`.
 // And vice versa, setting `animatedImage` will initially populate the `[UIImageView.image]` to its `posterImage` and then start animating and hold `currentFrame`.
 @property (nonatomic, strong) FLAnimatedImage *animatedImage;
